@@ -1,4 +1,4 @@
-public class NissanMotor extends AbstractAuto {
+public class NissanMotor extends AbstractVoertuig {
     static private String merk = "Nissan";
     private String model;
     private int bouwjaar;

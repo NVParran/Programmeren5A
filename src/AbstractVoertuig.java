@@ -1,3 +1,3 @@
-public abstract class AbstractAuto {
+public abstract class AbstractVoertuig {
      public abstract String getdetails();
 }
