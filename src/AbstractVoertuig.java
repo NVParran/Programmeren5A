@@ -25,5 +25,8 @@ public abstract class AbstractVoertuig {
 
     public abstract String getUitvoering();
 
+    public abstract double getPrijs();
+
+    public abstract void setPrijs(double prijs);
 
 }

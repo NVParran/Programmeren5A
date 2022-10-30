@@ -7,8 +7,9 @@ public class ToyotaAuto extends AbstractVoertuig {
     private String nummerplaat;
     private int aantalWielen;
     private String uitvoering;
+    private double prijs;
 
-    public ToyotaAuto(String model, int bouwjaar, Engine engine, String kleur, String nummerplaat, int aantalWielen, String uitvoering) {
+    public ToyotaAuto(String model, int bouwjaar, Engine engine, String kleur, String nummerplaat, int aantalWielen, String uitvoering, double prijs) {
         this.model = model;
         this.bouwjaar = bouwjaar;
         this.engine = engine;
@@ -16,6 +17,7 @@ public class ToyotaAuto extends AbstractVoertuig {
         this.nummerplaat = nummerplaat;
         this.aantalWielen = aantalWielen;
         this.uitvoering = uitvoering;
+        this.prijs = prijs;
     }
 
 
@@ -28,7 +30,9 @@ public class ToyotaAuto extends AbstractVoertuig {
                 "Kleur: " + kleur + "\n" +
                 "Nummerplaat: " + nummerplaat + "\n" +
                 "AantalWielen: " + aantalWielen + "\n" +
-                "Uitvoering: " + uitvoering + "\n";
+                "Uitvoering: " + uitvoering + "\n" +
+                "prijsLegeAuto: " + prijs + "\n" +
+                "prijsVolledigeUitvoering: " + (prijs + this.engine.getPrijs()) + "\n";
     }
 
     @Override
@@ -89,5 +93,15 @@ public class ToyotaAuto extends AbstractVoertuig {
     @Override
     public String getUitvoering() {
         return uitvoering;
+    }
+
+    @Override
+    public double getPrijs() {
+        return prijs;
+    }
+
+    @Override
+    public void setPrijs(double prijs) {
+        this.prijs = prijs;
     }
 }

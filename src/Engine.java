@@ -4,13 +4,15 @@ public class Engine {
     private int aantalCylinders;
     private int PK;
     private String brandStof;
+    private double prijs;
 
-    public Engine(String naam, int bouwjaar, int aantalCylinders, int PK, String brandStof) {
+    public Engine(String naam, int bouwjaar, int aantalCylinders, int PK, String brandStof, double prijs) {
         this.naam = naam;
         this.bouwjaar = bouwjaar;
         this.aantalCylinders = aantalCylinders;
         this.PK = PK;
         this.brandStof = brandStof;
+        this.prijs = prijs;
     }
 
     public String getdetails() {
@@ -18,7 +20,8 @@ public class Engine {
                 "Bouwjaar: " + bouwjaar + "\n" +
                 "Aantalcylinders: " + aantalCylinders + "\n" +
                 "PK: " + PK + "\n" +
-                "Brandstof: " + brandStof + "\n";
+                "Brandstof: " + brandStof + "\n" +
+                "Prijs: " + prijs + "\n";
     }
 
     public String getNaam() {
@@ -52,4 +55,22 @@ public class Engine {
     public void setPK(int PK) {
         this.PK = PK;
     }
+
+    public String getBrandStof() {
+        return brandStof;
+    }
+
+    public void setBrandStof(String brandStof) {
+        this.brandStof = brandStof;
+    }
+
+    public double getPrijs() {
+        return prijs;
+    }
+
+    public void setPrijs(double prijs) {
+        this.prijs = prijs;
+    }
 }
+
+
