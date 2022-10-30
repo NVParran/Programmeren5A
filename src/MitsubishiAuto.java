@@ -2,16 +2,16 @@ public class MitsubishiAuto extends AbstractVoertuig {
     private String merk = "Mitsubishi";
     private String model;
     private int bouwjaar;
-    private Motor motor;
+    private Engine engine;
     private String kleur;
     private String nummerplaat;
     private int aantalWielen;
     private String uitvoering;
 
-    public MitsubishiAuto(String model, int bouwjaar, Motor motor, String kleur, String nummerplaat, int aantalWielen, String uitvoering) {
+    public MitsubishiAuto(String model, int bouwjaar, Engine engine, String kleur, String nummerplaat, int aantalWielen, String uitvoering) {
         this.model = model;
         this.bouwjaar = bouwjaar;
-        this.motor = motor;
+        this.engine = engine;
         this.kleur = kleur;
         this.nummerplaat = nummerplaat;
         this.aantalWielen = aantalWielen;
@@ -23,7 +23,7 @@ public class MitsubishiAuto extends AbstractVoertuig {
         return "Merk: " + merk + "\n" +
                 "Model: " + model + "\n" +
                 "Bouwjaar: " + bouwjaar + "\n" +
-                "Motor: " + motor.getNaam() + "\n" +
+                "Motor: " + engine.getNaam() + "\n" +
                 "Kleur: " + kleur + "\n" +
                 "Nummerplaat: " + nummerplaat + "\n" +
                 "AantalWielen: " + aantalWielen + "\n" +
@@ -46,13 +46,13 @@ public class MitsubishiAuto extends AbstractVoertuig {
     }
 
     @Override
-    public Motor getMotor() {
-        return motor;
+    public Engine getMotor() {
+        return engine;
     }
 
     @Override
-    public void setMotor(Motor motor) {
-        this.motor = motor;
+    public void setMotor(Engine engine) {
+        this.engine = engine;
     }
 
     @Override

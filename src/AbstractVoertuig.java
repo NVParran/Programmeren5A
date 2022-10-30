@@ -7,9 +7,9 @@ public abstract class AbstractVoertuig {
 
     public abstract int getBouwjaar();
 
-    public abstract Motor getMotor();
+    public abstract Engine getMotor();
 
-    public abstract void setMotor(Motor motor);
+    public abstract void setMotor(Engine engine);
 
     public abstract String getKleur();
 

@@ -1,11 +1,11 @@
-public class Motor {
+public class Engine {
     private String naam;
     private int bouwjaar;
     private int aantalCylinders;
     private int PK;
     private String brandStof;
 
-    public Motor(String naam, int bouwjaar, int aantalCylinders, int PK, String brandStof) {
+    public Engine(String naam, int bouwjaar, int aantalCylinders, int PK, String brandStof) {
         this.naam = naam;
         this.bouwjaar = bouwjaar;
         this.aantalCylinders = aantalCylinders;
