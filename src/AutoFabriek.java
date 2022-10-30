@@ -1,4 +1,4 @@
-public class Autofabriek extends AbstactVoertuigFabriek{
+public class AutoFabriek extends AbstactVoertuigFabriek{
     static private String uitvoering = "persoonsauto";
 
     @Override

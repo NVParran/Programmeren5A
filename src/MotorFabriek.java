@@ -1,4 +1,4 @@
-public class Motorfabriek extends AbstactVoertuigFabriek{
+public class MotorFabriek extends AbstactVoertuigFabriek{
     static private String uitvoering = "motor";
 
 
