@@ -1,14 +1,24 @@
 public class Motor {
     private String naam;
-    private int Bouwjaar;
+    private int bouwjaar;
     private int aantalCylinders;
     private int PK;
+    private String brandStof;
 
-    public Motor(String naam, int bouwjaar, int aantalCylinders, int PK) {
+    public Motor(String naam, int bouwjaar, int aantalCylinders, int PK, String brandStof) {
         this.naam = naam;
-        Bouwjaar = bouwjaar;
+        this.bouwjaar = bouwjaar;
         this.aantalCylinders = aantalCylinders;
         this.PK = PK;
+        this.brandStof = brandStof;
+    }
+
+    public String getdetails() {
+        return "Naam: " + naam + "\n" +
+                "Bouwjaar: " + bouwjaar + "\n" +
+                "Aantalcylinders: " + aantalCylinders + "\n" +
+                "PK: " + PK + "\n" +
+                "Brandstof: " + brandStof + "\n";
     }
 
     public String getNaam() {
@@ -20,11 +30,11 @@ public class Motor {
     }
 
     public int getBouwjaar() {
-        return Bouwjaar;
+        return bouwjaar;
     }
 
     public void setBouwjaar(int bouwjaar) {
-        Bouwjaar = bouwjaar;
+        bouwjaar = bouwjaar;
     }
 
     public int getAantalCylinders() {

@@ -1,5 +1,5 @@
 public class ToyotaAuto extends AbstractVoertuig {
-    static private String merk = "Toyota";
+    private String merk = "Toyota";
     private String model;
     private int bouwjaar;
     private Motor motor;
@@ -18,6 +18,7 @@ public class ToyotaAuto extends AbstractVoertuig {
         this.uitvoering = uitvoering;
     }
 
+
     @Override
     public String getdetails() {
         return "Merk: " + merk + "\n" +
@@ -28,5 +29,65 @@ public class ToyotaAuto extends AbstractVoertuig {
                 "Nummerplaat: " + nummerplaat + "\n" +
                 "AantalWielen: " + aantalWielen + "\n" +
                 "Uitvoering: " + uitvoering + "\n";
+    }
+
+    @Override
+    public String getMerk() {
+        return merk;
+    }
+
+    @Override
+    public String getModel() {
+        return model;
+    }
+
+    @Override
+    public int getBouwjaar() {
+        return bouwjaar;
+    }
+
+    @Override
+    public Motor getMotor() {
+        return motor;
+    }
+
+    @Override
+    public void setMotor(Motor motor) {
+        this.motor = motor;
+    }
+
+    @Override
+    public String getKleur() {
+        return kleur;
+    }
+
+    @Override
+    public void setKleur(String kleur) {
+        this.kleur = kleur;
+    }
+
+    @Override
+    public String getNummerplaat() {
+        return nummerplaat;
+    }
+
+    @Override
+    public void setNummerplaat(String nummerplaat) {
+        this.nummerplaat = nummerplaat;
+    }
+
+    @Override
+    public int getAantalWielen() {
+        return aantalWielen;
+    }
+
+    @Override
+    public void setAantalWielen(int aantalWielen) {
+        this.aantalWielen = aantalWielen;
+    }
+
+    @Override
+    public String getUitvoering() {
+        return uitvoering;
     }
 }
