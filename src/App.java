@@ -1,8 +1,6 @@
 public class App {
     public static void main(String[] args) {
-        System.out.println("hello");
-        System.out.println("test");
-        System.out.println("juanmoment");
-        System.out.println("InitailD");
+        MitsubishiLanEvo3 car = new MitsubishiLanEvo3("Mitsubishi",1990, new Motor("Epicmotor"),"Rood", "IeatS");
+        System.out.println(car.getdetails());
     }
 }
