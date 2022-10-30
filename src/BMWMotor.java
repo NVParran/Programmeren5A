@@ -7,7 +7,6 @@ public class BMWMotor extends AbstractAuto {
     private String nummerplaat;
     private int aantalWielen;
 
-
     public BMWMotor(String model, int bouwjaar, Motor motor, String kleur, String nummerplaat, int aantalWielen) {
         this.model = model;
         this.bouwjaar = bouwjaar;

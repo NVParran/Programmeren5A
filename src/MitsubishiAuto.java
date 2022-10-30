@@ -7,12 +7,13 @@ public class MitsubishiAuto extends AbstractAuto {
     private String nummerplaat;
     private int aantalWielen;
 
-    public MitsubishiAuto(String model, int bouwjaar, Motor motor, String kleur, String nummerplaat) {
+    public MitsubishiAuto(String model, int bouwjaar, Motor motor, String kleur, String nummerplaat, int aantalWielen) {
         this.model = model;
         this.bouwjaar = bouwjaar;
         this.motor = motor;
         this.kleur = kleur;
         this.nummerplaat = nummerplaat;
+        this.aantalWielen = aantalWielen;
     }
 
     @Override
