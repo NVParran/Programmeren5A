@@ -1,3 +1,4 @@
+
 public class BMWMotor extends AbstractVoertuig {
     private String merk = "Nissan";
     private String model;
@@ -18,6 +19,7 @@ public class BMWMotor extends AbstractVoertuig {
         this.aantalWielen = aantalWielen;
         this.uitvoering = uitvoering;
         this.prijs = prijs;
+
     }
 
 
@@ -32,7 +34,7 @@ public class BMWMotor extends AbstractVoertuig {
                 "AantalWielen: " + aantalWielen + "\n" +
                 "Uitvoering: " + uitvoering + "\n" +
                 "prijsLegeAuto: " + prijs + "\n" +
-                "prijsVolledigeUitvoering: " + (prijs + this.engine.getPrijs()) + "\n";
+                "prijsVolledigeUitvoering: " + ((prijs + this.engine.getPrijs())) + "\n";
     }
 
     @Override
