@@ -6,14 +6,16 @@ public class ToyotaAuto extends AbstractVoertuig {
     private String kleur;
     private String nummerplaat;
     private int aantalWielen;
+    private String uitvoering;
 
-    public ToyotaAuto(String model, int bouwjaar, Motor motor, String kleur, String nummerplaat, int aantalWielen) {
+    public ToyotaAuto(String model, int bouwjaar, Motor motor, String kleur, String nummerplaat, int aantalWielen, String uitvoering) {
         this.model = model;
         this.bouwjaar = bouwjaar;
         this.motor = motor;
         this.kleur = kleur;
         this.nummerplaat = nummerplaat;
         this.aantalWielen = aantalWielen;
+        this.uitvoering = uitvoering;
     }
 
     @Override
@@ -24,6 +26,7 @@ public class ToyotaAuto extends AbstractVoertuig {
                 "Motor: " + motor.getNaam() + "\n" +
                 "Kleur: " + kleur + "\n" +
                 "Nummerplaat: " + nummerplaat + "\n" +
-                "AantalWielen: " + aantalWielen + "\n";
+                "AantalWielen: " + aantalWielen + "\n" +
+                "Uitvoering: " + uitvoering + "\n";
     }
 }
