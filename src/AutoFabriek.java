@@ -1,5 +1,5 @@
 public class AutoFabriek extends AbstactVoertuigFabriek{
-    static private String uitvoering = "persoonsauto";
+    static private String uitvoering = "Persoonsauto";
 
     @Override
     AbstractVoertuig getVoertuig(Voertuigtype voertuigtype, String model, int bouwjaar, Motor motor, String kleur, String nummerplaat) {

@@ -1,5 +1,5 @@
 public class MotorFabriek extends AbstactVoertuigFabriek{
-    static private String uitvoering = "motor";
+    static private String uitvoering = "PersoonsMotor";
 
 
     @Override
