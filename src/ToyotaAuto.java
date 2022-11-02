@@ -1,4 +1,4 @@
-public class ToyotaAuto extends AbstractVoertuig {
+public class ToyotaAuto implements AbstractVoertuig {
     private String merk = "Toyota";
     private String model;
     private int bouwjaar;

@@ -1,4 +1,4 @@
-public abstract class AbstractVoertuig {
+public interface AbstractVoertuig {
     public abstract String getdetails();
 
     public abstract String getMerk();
